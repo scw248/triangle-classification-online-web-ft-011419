@@ -12,7 +12,7 @@ class Triangle
     
     if (length1 + length2 < length3) || (length1 + length3 < length2) || (length2 + length3 < length1)
       raise TriangleError
-    if length1 == length2 && length2 == length3
+    elsif length1 == length2 && length2 == length3
       :equilateral
     elsif (length1 == length2 && length2 != length3) || (length2 == length3 && length3 != length1) || (length1 == length3 && length1 != length2)
       :isosceles
